@@ -1,9 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
-
-
-
-    // ps:https://leetcode.com/problems/minimum-length-of-string-after-removing-substrings/
+// ps:https://leetcode.com/problems/minimum-length-of-string-after-removing-substrings/
     public class MinimumLengthOfStringAfterOperations {
         // the main key is odd hoga to 1 or even hoga to 2 each case
         public int minimumLength(String s) {

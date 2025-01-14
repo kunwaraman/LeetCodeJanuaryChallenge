@@ -22,33 +22,32 @@ import java.util.Map;
             return res;
 
         }
-    }
-    public class Solution{
+
+
         // to find freq via map
-        public int minimumLength(String s) {
+        public int minimumLength1(String s) {
             int n = s.length();
-            HashMap<Character,Integer> map = new HashMap<>();
-            int res=0;
-            for(char ch:s.toCharArray()){
-                map.put(ch,map.getOrDefault(ch,0)+1);
-                if(map.get(ch)==3){
-                    map.put(ch,map.get(ch)-2);
+            HashMap<Character, Integer> map = new HashMap<>();
+            int res = 0;
+            for (char ch : s.toCharArray()) {
+                map.put(ch, map.getOrDefault(ch, 0) + 1);
+                if (map.get(ch) == 3) {
+                    map.put(ch, map.get(ch) - 2);
                 }
             }
-            for(Map.Entry<Character,Integer> entry:map.entrySet()){
-                int val=entry.getValue();
-                res+=val;
+            for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+                int val = entry.getValue();
+                res += val;
             }
             return res;
-
-
         }
-    }
-    public class solution2{
+
+
+
         // count via array freq
         // time complexity O(n)
         // space complexity O(1) contant space
-        public int minimumLength(String s) {
+        public int minimumLength2(String s) {
             int n = s.length();
             int freq[] = new int[26];
             int delete=0;
@@ -61,8 +60,9 @@ import java.util.Map;
             }
             return n-delete;
 
+
         }
-    }
+
 
 
 }
