@@ -1,6 +1,7 @@
 import java.util.*;
 // time complexity O(N∗M∗Log(N∗M))
 // space complexity O(N∗M)
+// ps: https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/
 public class MinimumCostToMakeAtLeastOneValidPathinAGrid {
     int[][] dirs = new int[][] { { 0, 1 }, { 0, -1 }, { 1, 0 }, { -1, 0 } };
     public int minCost(int[][] grid) {
